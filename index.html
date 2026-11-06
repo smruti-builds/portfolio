@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>.nav-toggle{display:none}nav{display:flex!important;position:static!important;flex-wrap:wrap;padding:0!important;border:0!important}</style></noscript>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -18,10 +19,10 @@
     <a class="brand" href="#top">Smruti Dolas</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Primary">
-      <a href="#about">About</a>
       <a href="#work">Selected work</a>
-      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -33,23 +34,40 @@
     <p class="kicker">Product and program leader &middot; Bangalore, India</p>
     <h1>I build products, and the processes that make them scale.</h1>
     <p class="lede">12+ years across FinTech, SaaS, engineering, manufacturing and investment banking operations. I bring structure to complex problems and turn them into measurable outcomes.</p>
+    <p class="focus">Exploring product roles in data, health and life sciences.</p>
+    <p class="tools"><span>Tools</span>Jira &middot; VMware cloud solutions &middot; Linux &middot; Python &middot; Excel</p>
     <div class="cta">
       <a class="btn main" href="#work">See selected work</a>
       <a class="btn" href="mailto:08smruti@gmail.com">Email me</a>
       <a class="btn" href="https://www.linkedin.com/in/smruti-d-984a8479" rel="noopener">LinkedIn</a>
     </div>
-  </section>
-
-  <section class="wrap" id="about" aria-labelledby="about-h">
-    <h2 id="about-h">About</h2>
-    <div class="prose">
-      <p>I work where product, program and process meet. In smaller teams that has meant owning the product itself, from vision and roadmap to prioritization and cost trade-offs. In larger organisations it has meant strengthening the processes, governance and reporting around products that are already in market.</p>
-      <p>My career began in engineering, at NetApp and Qlogic. I co-founded VISpectrum, a machine vision venture, then worked in systems and QA at VMware, as a business analyst on embedded automation, as a product consultant on digital products, and as a co-founder of Art Infused Workplaces. After a career break, I joined Morgan Stanley as a Senior Manager in Investment Banking Operations. I am currently a mentee in the Women in Big Data Shakti Mentoring Program.</p>
-    </div>
+    <dl class="stats">
+      <div><dt>30 &rarr; 16 hrs</dt><dd>production cycle time, Morgan Stanley</dd></div>
+      <div><dt>+30%</dt><dd>release frequency with no added headcount</dd></div>
+      <div><dt>+35%</dt><dd>inspection accuracy, VISpectrum</dd></div>
+      <div><dt>&minus;25%</dt><dd>development cycle time, Appzui</dd></div>
+    </dl>
   </section>
 
   <section class="wrap" id="work" aria-labelledby="work-h">
     <h2 id="work-h">Selected work</h2>
+
+    <article class="work">
+      <div class="meta">2026 &ndash; present<br>Bangalore</div>
+      <div>
+        <h3>Project AURA &mdash; The Emotional OTP: Can Your Body Crack the Code? <a href="https://smruti-builds.github.io/project-aura/" class="live" target="_blank" rel="noopener">Live demo &rarr;</a></h3>
+        <p class="role">Lead System Designer &amp; Bio-Signal Modeling &middot; <a href="https://github.com/smruti-builds/project-aura" target="_blank" rel="noopener">GitHub</a></p>
+        <p>Born from WiBD mentoring conversations with Ranjitha around her <a href="https://ranjithar.substack.com/p/the-anatomy-of-a-muted-mind" target="_blank" rel="noopener">The Anatomy of a Muted Mind</a>, Project Aura began with discussions on neuroscience, emotional processing, and the elusive 30-second pause. In her writing, that pause comes from something as ordinary as asking who would like tea. I told her I had not been able to take a 30-second pause in the middle of racing emotions, and she suggested an emotional one-time passcode (OTP) could help.</p>
+        <p>Emotions vary, situations evolve, and each of us responds differently. Could physiological signals offer clues to the emotions underlying these responses? Aura begins by examining body battery scores and exploring whether changes in heart rate are worth investigating as potential indicators of an emotional surge&mdash;not as proof of an emotion, but as patterns worth understanding.</p>
+        <p><strong>What I built and explored</strong></p>
+        <ul>
+          <li>An interactive simulator of wearable sensor streams (heart rate, HRV, electrodermal activity, respiration and motion) that compares a classic four-stage detection pipeline with a three-dimensional parallel stress-detection model.</li>
+          <li>A different way of reading smartwatch data: the same heart rate and blood pressure readings, treated as patterns that might point to different emotional states, with time as an added dimension.</li>
+          <li>A first set of emotional conditions or states to test those patterns against.</li>
+        </ul>
+        <p><strong>Where it stands:</strong> this is at the hypothesis stage. Any pattern would need to be analysed with clinical psychologists and psychiatrists before it is treated as a signal of an emotional state.</p>
+      </div>
+    </article>
 
     <article class="work">
       <div class="meta">2022 &ndash; 2023<br>Bangalore</div>
@@ -94,55 +112,25 @@
         </ul>
       </div>
     </article>
+  </section>
 
-    <article class="work">
-      <div class="meta">2019 &ndash; 2020<br>Bangalore</div>
-      <div>
-        <h3>Art in the workplace, Art Infused Workplaces</h3>
-        <p class="role">Co-Founder</p>
-        <p><strong>Offer:</strong> artworks in spaces employees can access within a company, and personalised artifacts for employees, such as a sensory or tactile object, a grounding item, a photo frame, or a non-personal piece of their choice.</p>
-        <ul>
-          <li>Translated business requirements into implementation plans, partnering directly with corporate clients, artists and vendors and owning the external stakeholder relationship end to end.</li>
-          <li>Set up the operating model, governance cadence and execution framework across multiple parallel initiatives.</li>
-          <li>Early engagements were in progress: some agreed to sensory tactile objects and others to artistic common spaces. We forecast a full engagement once the smaller outcomes succeeded.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="work">
-      <div class="meta">2026 &ndash; present<br>Bangalore</div>
-      <div>
-        <h3>Project AURA &mdash; The Emotional OTP: Can Your Body Crack the Code? <a href="https://smruti-builds.github.io/project-aura/" class="live" target="_blank" rel="noopener">Live demo &rarr;</a></h3>
-        <p class="role">Lead System Designer &amp; Bio-Signal Modeling &middot; <a href="https://github.com/smruti-builds/project-aura" target="_blank" rel="noopener">GitHub</a></p>
-        <p>
-          Born from WiBD mentoring conversations with Ranjitha around her <a href="https://ranjithar.substack.com/p/the-anatomy-of-a-muted-mind" target="_blank" rel="noopener">The Anatomy of a Muted Mind</a>, Project Aura began with discussions on neuroscience, emotional processing, and the elusive 30-second pause. Could an emotional OTP help us recognise an intense emotional response before reacting?
-        </p>
-        <p>Emotions vary, situations evolve, and each of us responds differently. Could physiological signals offer clues to the emotions underlying these responses? Aura begins by examining body battery scores and exploring whether changes in heart rate are worth investigating as potential indicators of an emotional surge—not as proof of an emotion, but as patterns worth understanding.</p>
-      </div>
-    </article>
+  <section class="wrap" id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Skills</h2>
+    <div class="cols">
+      <div><h3>Tools and platforms</h3><ul><li>Jira</li><li>VMware cloud solutions</li><li>Linux</li><li>Python</li><li>Excel and Zoho</li></ul></div>
+      <div><h3>Technical domains</h3><ul><li>Systems QA and root cause analysis</li><li>Embedded automation requirements: software, firmware and hardware dependencies</li><li>Machine vision inspection automation</li></ul></div>
+      <div><h3>Product</h3><ul><li>Product strategy and roadmapping</li><li>Problem definition and solution design</li><li>Revenue, cost and customer metrics</li><li>Multi-product management</li></ul></div>
+      <div><h3>Process and program</h3><ul><li>Process transformation and operating models</li><li>Risk, issue and dependency management</li><li>Scheduling, critical path analysis and cost-variance tracking</li><li>KPI reporting and executive decision support</li><li>Product governance and decision-making</li></ul></div>
+      <div><h3>Ways of working</h3><ul><li>Scrum, Kanban and Lean</li><li>Agile metrics and value-based prioritization</li><li>Resource and capacity planning</li><li>Customer and stakeholder engagement</li></ul></div>
+    </div>
   </section>
 
   <section class="wrap" id="experience" aria-labelledby="exp-h">
     <h2 id="exp-h">Experience</h2>
-    <div class="strip" role="img" aria-label="Timeline from 2011 to 2026 showing roles, including a career break from 2020 to 2022">
-      <div class="b l1" style="left:.5%;width:14.6%" title="VISpectrum"></div>
-      <div class="b l1" style="left:15.1%;width:7.3%" title="VMware India"></div>
-      <div class="b l1" style="left:31.4%;width:7.3%" title="Micrologic"></div>
-      <div class="b l1" style="left:39.5%;width:10.8%" title="Appzui"></div>
-      <div class="b l2" style="left:46%;width:3.2%" title="Shree Das"></div>
-      <div class="b l1" style="left:50.8%;width:4.9%" title="Art Infused Workplaces"></div>
-      <div class="b gap" style="left:55.7%;width:13.6%" title="Career break"></div>
-      <div class="b l1" style="left:69.3%;width:9.2%" title="Morgan Stanley"></div>
-      <div class="b l1" style="left:96.9%;width:3.1%" title="Women in Big Data mentorship"></div>
-    </div>
-    <div class="ticks" aria-hidden="true"><span>2011</span><span>2014</span><span>2017</span><span>2020</span><span>2023</span><span>2026</span></div>
-    <p class="legend">Solid bars are roles. The hatched bar is a career break.</p>
-
     <ul class="tl">
       <li><span class="d">2026 &ndash; present</span><span><strong>Mentee</strong>, Women in Big Data Shakti Mentoring Program</span></li>
       <li><span class="d">2022 &ndash; 2023</span><span><strong>Senior Manager, Investment Banking Operations</strong>, Morgan Stanley, Bangalore</span></li>
-      <li class="brk"><span class="d">2020 &ndash; 2022</span><span>Career break, then returned to work</span></li>
-      <li><span class="d">2019 &ndash; 2020</span><span><strong>Co-Founder</strong>, Art Infused Workplaces, Bangalore. Partnered with corporate clients, artists and vendors, and set up the operating model and governance cadence across parallel initiatives.</span></li>
+      <li><span class="d">2019 &ndash; 2020</span><span><strong>Co-Founder</strong>, Art Infused Workplaces, Bangalore. Partnered with corporate clients, artists and vendors, and set up the operating model and governance cadence across parallel initiatives. Offered artworks in shared workplace spaces and personalised artifacts for employees.</span></li>
       <li><span class="d">2018 &ndash; 2019</span><span><strong>Tea Taster, Operational Efficiency (FMCG)</strong>, Shree Das Food Processing, Bangalore. Delivered an on-budget new product line launch and supported a 3% market share expansion at no incremental cost.</span></li>
       <li><span class="d">2017 &ndash; 2019</span><span><strong>Product Consultant, Digital Transformation Initiatives</strong>, Appzui Technologies, Bangalore</span></li>
       <li><span class="d">2016 &ndash; 2017</span><span><strong>Business Analyst, Product Design and Analysis</strong>, Micrologic Integrated Systems, Bangalore. Defined software, firmware, hardware dependency and integration requirements for embedded automation systems supporting Tier-1 OEM customers. Delivered a 12% cycle-time reduction and a 10% improvement in sales conversion.</span></li>
@@ -152,22 +140,29 @@
     </ul>
   </section>
 
-  <section class="wrap" id="skills" aria-labelledby="skills-h">
-    <h2 id="skills-h">Skills</h2>
-    <div class="cols">
-      <div><h3>Product</h3><ul><li>Product strategy and roadmapping</li><li>Problem definition and solution design</li><li>Revenue, cost and customer metrics</li><li>Multi-product management</li></ul></div>
-      <div><h3>Process and program</h3><ul><li>Process transformation and operating models</li><li>Risk, issue and dependency management</li><li>KPI reporting and executive decision support</li><li>Product governance and decision-making</li></ul></div>
-      <div><h3>Ways of working</h3><ul><li>Scrum, Kanban and Lean</li><li>Agile metrics and value-based prioritization</li><li>Resource and capacity planning</li><li>Customer and stakeholder engagement</li></ul></div>
+  <section class="wrap" id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <div class="prose">
+      <p>I work where product, program and process meet: owning products end to end in small teams, and strengthening the governance, processes and reporting around them in larger ones. My career began in engineering and has moved through machine vision, systems QA, digital products and investment banking operations.</p>
+      <p>I am currently a mentee in the Women in Big Data Shakti Mentoring Program, where I am building Project AURA.</p>
+    </div>
+    <div class="carry">
+      <h3>What carries across industries</h3>
+      <ul>
+        <li>Governed, high-stakes operations: program dashboards, risk and dependency management in investment banking operations.</li>
+        <li>Quality discipline: root cause analysis and QA at VMware, quality audits and tasting protocols at Shree Das.</li>
+        <li>KPI-led decisions: reporting mechanisms from VISpectrum through to Morgan Stanley.</li>
+      </ul>
     </div>
   </section>
 
   <section class="wrap" id="education" aria-labelledby="edu-h">
-    <h2 id="edu-h">Education, certifications and other training</h2>
+    <h2 id="edu-h">Education and certifications</h2>
     <div class="cols">
       <div><h3>Education</h3><ul><li>Post Graduate Diploma in Business Administration, Massey University, New Zealand (2009)</li><li>Bachelor of Engineering, Electronics and Telecommunication, Cummins College of Engineering for Women, Savitribai Phule Pune University (2006)</li></ul></div>
       <div><h3>Certifications</h3><ul><li>Certified Scrum Master, Scrum Alliance (2022)</li><li>Fundamentals of Project Planning and Management, University of Virginia (2020)</li><li>Professional Certification in Tea Tasting and Marketing, Indian Institute of Plantation Management (2018)</li></ul></div>
-      <div><h3>Other</h3><ul><li>Basic Mountaineering Course (qualified), ABVIMAS, Manali (2025)</li></ul></div>
     </div>
+    <p class="beyond"><strong>Beyond work:</strong> qualified Basic Mountaineering Course, ABVIMAS, Manali (2025).</p>
   </section>
 </main>
 
@@ -177,6 +172,6 @@
   <p><a href="https://www.linkedin.com/in/smruti-d-984a8479" rel="noopener">linkedin.com/in/smruti-d-984a8479</a></p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
